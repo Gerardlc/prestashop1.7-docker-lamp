@@ -1,6 +1,15 @@
 # Prestashop 1.7 docker configuration
 
-Stack defines to run Prestashop 1.7.6.X, you have to download the latest stable version [here](https://www.prestashop.com/en/previous-versions) and extract it into the `www` folder.
+Stack defines to run Prestashop 1.7.7.X, you have to download the latest stable version [here](https://www.prestashop.com/en/previous-versions) and extract it into the `www` folder. You can do it manually or with this commands:
+
+`wget https://download.prestashop.com/download/releases/prestashop_1.7.7.0.zip`
+
+`mkdir www`
+
+`unzip prestashop_1.7.7.0.zip -d wwww`
+
+`rm prestashop_1.7.7.0.zip`
+
 
 Then, you can follow the Prestashop installer instructions.
 
@@ -14,7 +23,7 @@ Here is the result provided by the [Prestashop system requirements tool](https:/
 - user: root
 - pwd: root
 
-Of course you can change everything in the `docker-compose.yml`
+Of course you can change everything in the `docker-compose.yml` if you already are using por 3306 on your local machine you can change the port to "5000:3306"
 
 
 ### Useful commands:
